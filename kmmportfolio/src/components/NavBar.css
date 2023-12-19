@@ -1,36 +1,52 @@
 /* NavBar.css */
 
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #628199;
-    height: 30px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    color: white; /* Change text color of the whole navbar to white */
-    border-bottom: 4px solid #B4245D;
-    /* Adjust other styles as needed */
-  }
-  
-  .brand {
-    margin-left: 20px;
-    color: white; /* Change text color of "KM Manyathi" to white */
-  }
-  
-  .nav-links ul {
-    display: flex;
-    padding: 0;
-    margin: 0;
-    justify-content: flex-end;
-  }
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000; /* Ensure the navbar is above other content */
+  background-color: #628199;
+  height: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: white;
+  border-bottom: 4px solid #b4245d; /* Updated the color code */
+  /* Adjust other styles as needed */
+}
 
-  .nav-links ul li {
-    list-style: none;
-    margin-right: 20px;
-    padding: 0;
-    display: flex;
-    align-items: center;
-    color: white; /* Change text color of the links to white */
-  }
-  
+.brand {
+  margin-left: 20px;
+  color: white;
+}
+
+.nav-links ul {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  justify-content: flex-end;
+}
+
+.nav-links ul li {
+  list-style: none;
+  margin-right: 20px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+/* .main-containerCert {
+  display: flex;
+  max-width: 40%;
+  margin: 0;
+  padding: 0;
+}
+
+#projectimg {
+  width: 50px;
+  height: 35px;
+} */

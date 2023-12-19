@@ -1,8 +1,14 @@
 /* App.css */
 body {
   overflow-x: hidden;
+  
   max-height: 100vh;
-  -ms-overflow-style: scroll;
+  min-width: 100vw;
+  background-image: url('../src/assets/background.jpg');
+  background-size: cover; /* Adjusts the size of the image to cover the entire element */
+  background-position: center; /* Positions the image at the center */
+  background-attachment: fixed;
+  background-position-y: -20px !important;
 }
 .App {
   text-align: center;
@@ -20,11 +26,12 @@ body {
 }
 
 .main-container {
-  background-image: url('../src/assets/background.jpg');
-  background-size: cover; /* Adjusts the size of the image to cover the entire element */
-  background-position: center; /* Positions the image at the center */
+
   max-height: calc(100vh - 55px);
   display: flex;
+  min-width: 100vw;
+  padding:0;
+/*   margin: 20px 0 0 0;   */
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -52,6 +59,7 @@ body {
   position: relative;
   height: 100vh;
   display: flex;
+  padding: 45px 0;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
@@ -60,8 +68,11 @@ body {
 .navbar {
   background-color: #333;
   color: #fff;
-  padding: 15px;
+  padding: 10px;
   font-size: 1.5rem;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
   width: 100%;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
@@ -90,7 +101,7 @@ body {
 .header-cap {
   position: absolute;
   display: inline-flex;
-  margin-top: -20px;
+  margin-top: -25px;
   transform: translateX(-50%);
   opacity: 1;
   font-weight: normal;
@@ -114,10 +125,10 @@ body {
   font-size: 14px;
   display: grid;
   justify-content: center;
-  margin: -20px auto 0; /* Adjust the top margin to lift it up */
+  margin: 75px 0 auto 0  !important; /* Adjust the top margin to lift it up */
   padding: 15px 20px; /* Adjusted padding for better visibility */
   border: 1px solid #B4245D;
-  background-color: rgba(0, 0, 0, 0.25);
+  background-color: rgba(0, 0, 0, 0.45);
   animation: fade-in 2.5s ease-in;
   position: relative; /* Added position property */
   top: -50px; /* Adjust the top position */

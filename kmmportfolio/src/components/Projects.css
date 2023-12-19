@@ -1,0 +1,50 @@
+/* certificates.css */
+
+.main-containerProj {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100vw;
+  /* padding-top: 60px; */
+  ; /* change!!!!!!! */
+  justify-self: center;
+  margin: 60px auto;
+  background-color: transparent;
+  color: transparent; /* Making the text transparent */
+  height: 100vh; /* Adjust as needed */
+}
+
+.projects {
+  padding: 0;
+  background-color: transparent;
+  text-align: left;
+  padding-top: 30px;
+  width: 50vw; /* Adjust width as needed */
+  text-align: center;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+#projectimg {
+  max-width: 100%;
+  height: auto;
+  margin-top: 0;
+}
+
+#projectcap {
+  text-align: left;
+  background-color: rgba(98, 129, 153, 0.5); /* Semi-transparent color */
+  color: white;
+  padding: 20px;
+}
+.projlabel {
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+ /*  margin-bottom: 60px; */
+  background-color: black;
+  padding: 10px !important;
+  z-index: 1000;
+}
