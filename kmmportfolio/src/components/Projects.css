@@ -11,6 +11,85 @@
   height: 100vh;
 }
 
+
+
+/* Target the carousel itself */
+.carousel {
+  /* Your styles here */
+  /* For example: */
+  background-color: #f7f7f7;
+  border-radius: 8px;
+  overflow: hidden;
+  height: 500px;
+}
+
+/* Target carousel items */
+.carousel-item {
+  height: 500px;
+  text-align: center;
+}
+.project-caption {
+  text-align: left !important;
+}
+/* Target carousel item captions */
+.carousel-caption {
+  display: flex;
+  position: relative;
+  
+  top: 300px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 10px;
+}
+
+/* Target carousel controls */
+.carousel-control-prev,
+.carousel-control-next {
+  border: 2px solid #fff;
+  padding: 0px;
+  background-color: #b4245e;
+  color: #333;
+  height: 50px;
+  border-radius: 100%;
+  /* Customize arrows or styles as needed */
+}
+.carousel-control-prev {
+  width: 50px;
+  position: absolute;
+  top: 200px;
+  left: 10px;
+}
+.carousel-control-next {
+  width: 50px;
+  position: absolute;
+  top: 200px;
+  right: 10px;
+  
+}
+
+/* Target specific carousel indicators */
+.carousel-indicators {
+  list-style: circle;
+  padding-left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-indicators li {
+  width: 10px;
+  height: 10px;
+  border: 1px solid #fff;
+  border-radius: 100%;
+  margin: 0 5px;
+}
+
+.carousel-indicators .active {
+  background-color: #B4245D;
+  border: none;
+}
+
+
 #projects {
   padding: 0;
   background-color: transparent;
@@ -39,7 +118,7 @@
   display: flex;
   justify-content: center;
   font-weight: bold;
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.708);
   padding: 10px !important;
   z-index: 1000;
 }
