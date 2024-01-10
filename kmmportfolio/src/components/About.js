@@ -1,9 +1,11 @@
 import React from "react";
+import Loader from "react-loaders";
 import './About.css';
 import '../App.css';
 import 'animate.css';
+import 'loaders.css';
 const About = () => {
-    return (
+    return (<>
 <div id='about'>
         <p>Welcome to my portfolio! I'm a highly motivated Information Technology graduate specializing in Software Development,
           Business Analysis, and Information Systems. Currently, I'm gaining invaluable experience as an Intern in Software Network
@@ -22,6 +24,6 @@ const About = () => {
           continuous growth. Thank you for visiting my portfolio. I'm excited about the opportunities ahead and eager to explore how I
           can contribute to the ever-evolving landscape of technology. <a href="#certifications-navpoint" style={{fontWeight: 'bold', color: '#B4245D'}}>Click here</a> to view qualifications and certificates.</p>
       </div>
-      );
+       </>);
     }
     export default About;

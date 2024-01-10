@@ -11,11 +11,19 @@ import {
   NavbarToggler,
 } from "reactstrap";
 import "./NavBar.scss";
+import Loader from "react-loaders";
+import "loaders.css";
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [loading,setLoading]=useState(false);
 
+  const timeLoader=()=>{
+      setLoading(true);
+      setTimeout(()=>{setLoading(false)},500);
+  };
   return (
+    <>
     <Navbar
       style={{
         backgroundColor: "#628199",
@@ -60,6 +68,7 @@ const NavBar = () => {
               className="text-light"
               style={{ fontWeight: "bold", fontSize: "14px" }}
               href="#about-navpoint"
+              onClick={timeLoader}
             >
               ABOUT
             </NavLink>
@@ -89,7 +98,7 @@ const NavBar = () => {
             <NavLink
               className="text-light"
               style={{ fontWeight: "bold", fontSize: "14px" }}
-              href="#contact"
+              href="#contact-navpoint"
             >
               CONTACT
             </NavLink>
@@ -108,6 +117,10 @@ const NavBar = () => {
         </Nav>
       </Collapse>
     </Navbar>
+    {loading &&
+     <Loader className='loading' style={{position:"fixed",top:"50vh",left:"50vw",zIndex:"999", color: "#B4245D", width: "50px", height: "50px"}} type="pacman" />
+    }
+    </>
   );
 };
 

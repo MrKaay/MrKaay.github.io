@@ -5,6 +5,7 @@ import Projects from './components/Projects';
 import PortfolioComponent from './components/PortfolioComponent';
 import Certificates from './components/Certificates';
 import About from './components/About';
+import Contact from './components/Contact';
 
 function App() {
   useEffect(() => {
@@ -57,6 +58,8 @@ function App() {
       <Projects />
       <a id="certifications-navpoint"></a>
       <Certificates />
+      <a id="about-navpoint"></a>
+      <Contact />
     </div>
   );
 }
