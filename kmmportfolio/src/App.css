@@ -1,6 +1,8 @@
-/* App.css */
+:root {
+  --primary-color: #B4245D;
+}
 @import 'animate.css';
-@import 'loaders.css';
+/* @import 'loaders.css'; */
 @font-face {
   font-family: 'Helvetica Neue';
   src: url('./assets/fonts/helvetica-neu.ttf') format('ttf');

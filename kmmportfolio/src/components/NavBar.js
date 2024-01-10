@@ -69,7 +69,7 @@ const NavBar = () => {
               className="text-light"
               style={{ fontWeight: "bold", fontSize: "14px" }}
               href="#about-navpoint"
-              onClick={timeLoader}
+              /* onClick={timeLoader} */
             >
               ABOUT
             </NavLink>
@@ -80,7 +80,7 @@ const NavBar = () => {
               className="text-light"
               style={{ fontWeight: "bold", fontSize: "14px" }}
               href="#projects-navpoint"
-              onClick={timeLoader}
+              /* onClick={timeLoader} */
             >
               PROJECTS
             </NavLink>
@@ -91,7 +91,7 @@ const NavBar = () => {
               className="text-light"
               style={{ fontWeight: "bold", fontSize: "14px" }}
               href="#certifications-navpoint"
-              onClick={timeLoader}
+              /* onClick={timeLoader} */
             >
               CERTIFICATIONS
             </NavLink>
@@ -113,7 +113,7 @@ const NavBar = () => {
               className="text-light"
               style={{ fontWeight: "bold", fontSize: "14px" }}
               href="#home-navpoint"
-              onClick={timeLoader}
+              /* onClick={timeLoader} */
             >
               <FontAwesomeIcon icon={faHome}  />
             </NavLink>

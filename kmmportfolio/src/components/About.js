@@ -24,6 +24,7 @@ const About = () => {
           continuous growth. Thank you for visiting my portfolio. I'm excited about the opportunities ahead and eager to explore how I
           can contribute to the ever-evolving landscape of technology. <a href="#certifications-navpoint" style={{fontWeight: 'bold', color: '#B4245D'}}>Click here</a> to view qualifications and certificates.</p>
       </div>
+      <Loader type="pacman" />
        </>);
     }
     export default About;

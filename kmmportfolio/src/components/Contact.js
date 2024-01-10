@@ -3,11 +3,13 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
 import {
   faFacebook,
-  faTwitter,
+  faTwitter, faWhatsapp,
   faInstagram,
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
 import './Contact.css';
+import Fieldset from "./Fieldset";
+
 
 const Contact = () => {
   const handleSubmit = (e) => {
@@ -28,7 +30,7 @@ const Contact = () => {
     console.log(data);
   };
 
-  return (
+  return (<>
     <div className="contact-container">
       <h2 className="header">Contact Me</h2>
       <p>
@@ -44,12 +46,7 @@ const Contact = () => {
           <label htmlFor="email">Email:</label>
           <input type="email" id="email" name="email" required />
         </div>
-        <div className="form-group">
-          <label htmlFor="message">Message:</label>
-          <textarea id="message" name="message" rows="4" required></textarea>
-        </div>
-        <div className="form-group">
-          <label>Role:</label>
+        <Fieldset legend="Select your role:" className="roles">
           <div>
             <label htmlFor="recruiter">Recruiter</label>
             <input type="radio" id="recruiter" name="role" value="Recruiter" />
@@ -60,7 +57,7 @@ const Contact = () => {
           </div>
           <div>
             
-            <label htmlFor="interested">Other</label>
+            <label htmlFor="interested">Other role</label>
             <input
               type="radio"
               id="interested"
@@ -68,32 +65,37 @@ const Contact = () => {
               value="Interested"
             />
           </div>
+        </Fieldset>
+        <div className="form-group">
+          <label htmlFor="message">Message:</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
         </div>
+        
         <button type="submit">Submit</button>
       </form>
 
       <div className="social-icons">
-        <a href="#linkedin">
+        <a href="https://linkedin.com/in/khayelihle-manyathi-499362139" target="_blank">
           <FontAwesomeIcon icon={faLinkedin} />
         </a>
-        <a href="#twitter">
-          <FontAwesomeIcon icon={faTwitter} />
+        <a href="https://wa.me/27817900048" target="_blank">
+          <FontAwesomeIcon icon={faWhatsapp} />
         </a>
-        <a href="#facebook">
+        <a href="https://www.facebook.com/khayelihle.manyathi.71/" target="_blank">
           <FontAwesomeIcon icon={faFacebook} />
         </a>
-        <a href="#instagram">
+        <a href="https://www.instagram.com/mrkaay_hlanti/?next=%2F" target="_blank">
           <FontAwesomeIcon icon={faInstagram} />
         </a>
         <a href="mailto:manyathikhayelihle3@gmail.com">
           <FontAwesomeIcon icon={faEnvelope} />
         </a>
-        <a href="tel:+1234567890">
+        <a href="tel:+27817900048">
           <FontAwesomeIcon icon={faPhone} />
         </a>
       </div>
     </div>
-  );
+  </>);
 };
 
 export default Contact;
