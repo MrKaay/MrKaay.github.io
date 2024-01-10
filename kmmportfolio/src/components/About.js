@@ -6,7 +6,7 @@ import 'animate.css';
 import 'loaders.css';
 const About = () => {
     return (<>
-<div id='about'>
+<div id='about' class="animate__animated animate__bounce">
         <p>Welcome to my portfolio! I'm a highly motivated Information Technology graduate specializing in Software Development,
           Business Analysis, and Information Systems. Currently, I'm gaining invaluable experience as an Intern in Software Network
           Engineering. This role allows me to immerse myself in the intricate world of networking while providing desktop support,

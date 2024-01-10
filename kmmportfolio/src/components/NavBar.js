@@ -54,7 +54,8 @@ const NavBar = () => {
             <NavLink
               className="text-light"
               style={{ fontWeight: "bold", fontSize: "18px", width: "60px", opacity: 0 }}
-              href="#contact"
+              href="#contact-navpoint"
+          
             >
               <FontAwesomeIcon
                 icon={faHome}
@@ -79,6 +80,7 @@ const NavBar = () => {
               className="text-light"
               style={{ fontWeight: "bold", fontSize: "14px" }}
               href="#projects-navpoint"
+              onClick={timeLoader}
             >
               PROJECTS
             </NavLink>
@@ -89,6 +91,7 @@ const NavBar = () => {
               className="text-light"
               style={{ fontWeight: "bold", fontSize: "14px" }}
               href="#certifications-navpoint"
+              onClick={timeLoader}
             >
               CERTIFICATIONS
             </NavLink>
@@ -110,6 +113,7 @@ const NavBar = () => {
               className="text-light"
               style={{ fontWeight: "bold", fontSize: "14px" }}
               href="#home-navpoint"
+              onClick={timeLoader}
             >
               <FontAwesomeIcon icon={faHome}  />
             </NavLink>
