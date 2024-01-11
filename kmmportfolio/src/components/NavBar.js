@@ -44,17 +44,17 @@ const NavBar = () => {
           setIsOpen(!isOpen);
         }}
       />
-      <Collapse isOpen={isOpen} navbar>
+      <Collapse className="collapse" isOpen={isOpen} navbar>
         <Nav
-          className="ml-auto"
+          className="ml-auto nav"
           style={{ alignItems: "end", width: "100%" }}
           navbar
         >
-          <NavItem style={{ marginLeft: "auto" }} id="homebutton">
+          <NavItem className="navitems d-none d-sm-block" style={{ marginLeft: "auto" }} id="homebutton">
             <NavLink
               className="text-light"
               style={{ fontWeight: "bold", fontSize: "18px", width: "60px", opacity: 0 }}
-              href="#contact-navpoint"
+              href="#"
           
             >
               <FontAwesomeIcon
@@ -64,7 +64,7 @@ const NavBar = () => {
               />
             </NavLink>
           </NavItem>
-          <NavItem>
+          <NavItem className="navitems">
             <NavLink
               className="text-light"
               style={{ fontWeight: "bold", fontSize: "14px" }}
@@ -75,7 +75,7 @@ const NavBar = () => {
             </NavLink>
           </NavItem>
 
-          <NavItem>
+          <NavItem className="navitems">
             <NavLink
               className="text-light"
               style={{ fontWeight: "bold", fontSize: "14px" }}
@@ -86,7 +86,7 @@ const NavBar = () => {
             </NavLink>
           </NavItem>
 
-          <NavItem>
+          <NavItem className="navitems">
             <NavLink
               className="text-light"
               style={{ fontWeight: "bold", fontSize: "14px" }}
@@ -97,7 +97,7 @@ const NavBar = () => {
             </NavLink>
           </NavItem>
 
-          <NavItem>
+          <NavItem className="navitems">
             <NavLink
               className="text-light"
               style={{ fontWeight: "bold", fontSize: "14px" }}
@@ -108,7 +108,7 @@ const NavBar = () => {
           </NavItem>
 
           {/* SVG icon as a NavItem */}
-          <NavItem>
+          <NavItem className="navitems">
             <NavLink
               className="text-light"
               style={{ fontWeight: "bold", fontSize: "14px" }}

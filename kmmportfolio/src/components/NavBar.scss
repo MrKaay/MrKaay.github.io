@@ -16,3 +16,19 @@ $primary-color: #B4245D;
   animation: fadeOut 1s 1s;
   animation-fill-mode: forwards;
 }
+
+@media screen and (max-width: 768px) {
+  .collapse {
+    width: 40% !important;
+
+    .navitems {
+      background-color: #B4245D;
+      width: 40% !important; // Adjust the width as needed
+      align-items: center;
+      margin-right: -20px;
+    }
+  }
+}
+
+
+ 
