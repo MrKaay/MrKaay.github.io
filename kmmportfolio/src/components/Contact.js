@@ -8,9 +8,9 @@ import {
   faInstagram,
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
-import emailjs from "@emailjs/browser";
 import "./Contact.css";
 import Fieldset from "./Fieldset";
+import emailjs from "emailjs-com";
 
 const Contact = () => {
   const [formSubmitted, setFormSubmitted] = useState(false);
@@ -32,9 +32,9 @@ const Contact = () => {
 
     // Use your EmailJS template ID, user ID, and service ID
     emailjs
-      .send("service_mqe7hus", "ejs-test-mail-service", data, "fYfG1Q0J4EsMoC6n4")
+      .send("service_mqe7hus", "template_1r6zdow", data, "fYfG1Q0J4EsMoC6n4")
       .then((response) => {
-        alert("Email sent successfully!");
+        /* alert("Email sent successfully!"); */
         setFormSubmitted(true);
       })
       .catch((error) => {
@@ -54,8 +54,8 @@ const Contact = () => {
         {formSubmitted ? (
           <div className="success-message">
             <FontAwesomeIcon icon={["far", "check-circle"]} />
-            <p>Form submitted successfully!</p>
-            {resetForm}
+            <p>Form submitted successfully!🎉</p>
+            {/* <button onClick={resetForm}>Submit another form</button> */}
           </div>
         ) : (
           <>
@@ -119,21 +119,24 @@ const Contact = () => {
           <a
             href="https://linkedin.com/in/khayelihle-manyathi-499362139"
             target="_blank"
+            rel="noopener noreferrer"
           >
             <FontAwesomeIcon icon={faLinkedin} />
           </a>
-          <a href="https://wa.me/27817900048" target="_blank">
+          <a href="https://wa.me/27817900048" target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon icon={faWhatsapp} />
           </a>
           <a
             href="https://www.facebook.com/khayelihle.manyathi.71/"
             target="_blank"
+            rel="noopener noreferrer"
           >
             <FontAwesomeIcon icon={faFacebook} />
           </a>
           <a
             href="https://www.instagram.com/mrkaay_hlanti/?next=%2F"
             target="_blank"
+            rel="noopener noreferrer"
           >
             <FontAwesomeIcon icon={faInstagram} />
           </a>
