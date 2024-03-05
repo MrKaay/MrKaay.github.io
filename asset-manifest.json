@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/static/css/main.5d6b43c5.css",
+    "main.js": "/static/js/main.25c058fc.js",
+    "static/js/787.03c3f5be.chunk.js": "/static/js/787.03c3f5be.chunk.js",
+    "static/media/GalLanding.png": "/static/media/GalLanding.4dfb80f341f2ce5beb1c.png",
+    "static/media/Project1.png": "/static/media/Project1.dd95f12290a387425053.png",
+    "static/media/Project2.png": "/static/media/Project2.77380427de4e5e44d78b.png",
+    "static/media/TechnicalDoc.png": "/static/media/TechnicalDoc.ef519c4e8a14a0bad869.png",
+    "static/media/background.jpg": "/static/media/background.22f1287a067e1cc507df.jpg",
+    "static/media/helvetica-neu.ttf": "/static/media/helvetica-neu.8a19678078a6b21c8057.ttf",
+    "static/media/LaBelleAurore.woff2": "/static/media/LaBelleAurore.a83c1c58fd7e43972e4a.woff2",
+    "static/media/CoolveticaRg-Regular.woff2": "/static/media/CoolveticaRg-Regular.7d1f3b1dd46ad6557a17.woff2",
+    "index.html": "/index.html",
+    "main.5d6b43c5.css.map": "/static/css/main.5d6b43c5.css.map",
+    "main.25c058fc.js.map": "/static/js/main.25c058fc.js.map",
+    "787.03c3f5be.chunk.js.map": "/static/js/787.03c3f5be.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5d6b43c5.css",
+    "static/js/main.25c058fc.js"
+  ]
+}
